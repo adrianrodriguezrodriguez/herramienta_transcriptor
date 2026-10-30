@@ -1,0 +1,16 @@
+{
+    "hooks":  {
+                  "SessionEnd":  [
+                                     {
+                                         "hooks":  [
+                                                       {
+                                                           "command":  "nohup graphify update . \u003e/dev/null 2\u003e\u00261 \u0026",
+                                                           "type":  "command",
+                                                           "commandWindows":  "powershell.exe -NoProfile -WindowStyle Hidden -Command \"Start-Process -FilePath graphify -ArgumentList \u0027update\u0027,\u0027.\u0027 -WindowStyle Hidden\"",
+                                                           "timeout":  3
+                                                       }
+                                                   ]
+                                     }
+                                 ]
+              }
+}

@@ -1,0 +1,23 @@
+{
+    "schema_version":  2,
+    "template_version":  "2.4.0",
+    "template_commit":  "52878ed",
+    "managed_files":  {
+                          ".agents/skills/cerrar/SKILL.md":  "3d7a90e1f21a078effd827dc6266b95f2efae117374e4d76ea2f96a895e4459c",
+                          ".agents/skills/crear-plan/SKILL.md":  "026a8aa109ff2d3def7ed6e7f0bf9fccbe201c00d1ab45eaf6cdc55cacc461ab",
+                          ".agents/skills/ejecutar-plan/SKILL.md":  "13d614a4dc38a535d7aa54b2fbb22c7f990e1920b54ed4c7b2a5a275e7987354",
+                          ".agents/skills/error/SKILL.md":  "473f592ad7546cfae513c0e17b1bd4edb560432ad130cc9802b815014859483d",
+                          ".agents/skills/estado/SKILL.md":  "e48889a08fff9318c4de5c331ddf15dcc2b1291f8e7fd3699d0f0dd0fbb5c688",
+                          ".agents/skills/progreso/SKILL.md":  "6d4d0fe40f563b318babb8a507d81c56dbaafe8f8e599c9381deb56004b3db6b",
+                          ".claude/skills/cerrar/SKILL.md":  "3d7a90e1f21a078effd827dc6266b95f2efae117374e4d76ea2f96a895e4459c",
+                          ".claude/skills/crear-plan/SKILL.md":  "026a8aa109ff2d3def7ed6e7f0bf9fccbe201c00d1ab45eaf6cdc55cacc461ab",
+                          ".claude/skills/ejecutar-plan/SKILL.md":  "13d614a4dc38a535d7aa54b2fbb22c7f990e1920b54ed4c7b2a5a275e7987354",
+                          ".claude/skills/error/SKILL.md":  "473f592ad7546cfae513c0e17b1bd4edb560432ad130cc9802b815014859483d",
+                          ".claude/skills/estado/SKILL.md":  "e48889a08fff9318c4de5c331ddf15dcc2b1291f8e7fd3699d0f0dd0fbb5c688",
+                          ".claude/skills/progreso/SKILL.md":  "6d4d0fe40f563b318babb8a507d81c56dbaafe8f8e599c9381deb56004b3db6b",
+                          "AGENTS.md":  "d75d650f14c204742c45b627b192b4bf171ab63562375f402a27621199bb67cd",
+                          "ai_workspace/.gitignore":  "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+                          "ai_workspace/tools/planes.ps1":  "fb0d7f4a0d3140c2d27d5276a288e46dc962768ee9f091d049345abdc79fb6c2",
+                          "CLAUDE.md":  "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
+                      }
+}

@@ -1,0 +1,16 @@
+.venv/
+modelos/
+entrada/
+salida/
+__pycache__/
+.pytest_cache/
+graphify-out/
+*.pyc
+*.wav
+*.mp4
+*.mkv
+*.webm
+*.mov
+*.mp3
+*.m4a
+*.ogg

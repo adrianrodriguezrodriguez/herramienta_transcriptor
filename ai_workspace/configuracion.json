@@ -1,0 +1,70 @@
+{
+    "schema_version":  2,
+    "template_version":  "2.4.0",
+    "proyecto":  {
+                     "nombre":  "Transcriptor local de reuniones",
+                     "descripcion":  "Vídeo o audio a texto con tiempos y hablantes; nombres solo con evidencia; todo local.",
+                     "autoria":  "Adrián Rodríguez Rodríguez",
+                     "plataformas":  [
+                                         "Windows 11"
+                                     ],
+                     "tecnologias":  [
+                                         "Python 3.11",
+                                         "faster-whisper",
+                                         "ctranslate2",
+                                         "torch CUDA 12.4",
+                                         "resemblyzer",
+                                         "webrtcvad",
+                                         "scikit-learn",
+                                         "ffmpeg"
+                                     ],
+                     "verificacion":  [
+                                          ".venv\\Scripts\\python -m pytest"
+                                      ],
+                     "reglas":  [
+                                    "Vídeo y audio se procesan en local; nunca se suben.",
+                                    "Nombres de hablantes solo con evidencia; sin reconocimiento facial.",
+                                    "Las grabaciones del usuario no se modifican ni se copian al repositorio."
+                                ],
+                     "intocables":  [
+                                        "entrada/ (originales del usuario)"
+                                    ],
+                     "interfaz":  false
+                 },
+    "preferencias":  {
+                         "idioma":  "español",
+                         "modelo_y_esfuerzo":  "medio_alto",
+                         "avisos":  "fases",
+                         "git":  "lectura_preguntar"
+                     },
+    "asistentes":  [
+                       "claude",
+                       "codex"
+                   ],
+    "graphify":  true,
+    "limites_kb":  {
+                       "AGENTS.md":  6,
+                       "ai_workspace/progreso.md":  6,
+                       "PLAN_ACTUAL.md":  10,
+                       "ai_workspace/ESTADO.md":  3,
+                       "ai_workspace/archivo/CHANGELOG.md":  6,
+                       "ai_workspace/contexto/":  8
+                   },
+    "contexto":  {
+                     "ai_workspace/contexto/arquitectura.md":  {
+                                                                   "leer_si":  "cambiar la estructura del código"
+                                                               }
+                 },
+    "contenido_propio":  [
+
+                         ],
+    "extra":  "PLAN_ACTUAL.md se conserva intacto. En esta ejecución están autorizados Git local y commits, sin remoto ni push. No usar grabaciones reales en pruebas.",
+    "exclusiones_backup":  [
+                               ".venv",
+                               "modelos",
+                               "entrada",
+                               "salida",
+                               "graphify-out",
+                               "__pycache__"
+                           ]
+}

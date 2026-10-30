@@ -1,0 +1,22 @@
+{
+    "hooks":  {
+                  "SessionEnd":  [
+                                     {
+                                         "hooks":  [
+                                                       {
+                                                           "command":  "powershell.exe",
+                                                           "type":  "command",
+                                                           "args":  [
+                                                                        "-NoProfile",
+                                                                        "-WindowStyle",
+                                                                        "Hidden",
+                                                                        "-Command",
+                                                                        "Start-Process -FilePath graphify -ArgumentList \u0027update\u0027,\u0027.\u0027 -WorkingDirectory $env:CLAUDE_PROJECT_DIR -WindowStyle Hidden"
+                                                                    ],
+                                                           "timeout":  10
+                                                       }
+                                                   ]
+                                     }
+                                 ]
+              }
+}

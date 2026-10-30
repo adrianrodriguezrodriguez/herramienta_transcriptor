@@ -1,0 +1,11 @@
+# Ruido para el grafo: dependencias, generados y minificados.
+.venv
+modelos
+entrada
+salida
+graphify-out
+__pycache__
+ai_workspace/archivo/
+*.min.js
+*.min.css
+*.map

@@ -1,0 +1,3 @@
+# Arquitectura
+
+Solo hechos confirmados.
