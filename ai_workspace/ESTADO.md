@@ -1,7 +1,6 @@
 # Estado — 30/10/2026
 
-Versión 1 operativa. Bloques 0 y 1 hechos; bloque 2 verificado salvo limpieza del origen.
-PLAN_ACTUAL.md se conserva intacto por instrucción expresa; su estado BORRADOR no refleja la ejecución.
+Versión 1 terminada y publicada en GitHub (`origin/main`). Plan de arranque y versión 1 archivado como COMPLETADO.
 
 ## Hecho
 
@@ -13,23 +12,22 @@ PLAN_ACTUAL.md se conserva intacto por instrucción expresa; su estado BORRADOR 
 - OCR de rótulos sintéticos verificado; abstención ante solapes, contradicciones o nombres
   compartidos por voces. Un tiempo de espera agotado del OCR no impide terminar.
 - Resemblyzer 0.1.4 empaquetado con webrtcvad-wheels; no fue necesario cambiar de motor.
+- Repositorio publicado: https://github.com/adrianrodriguezrodriguez/herramienta_transcriptor (rama `main`).
+- Origen `C:\Users\iovip\.codex\tmp\io_066_auditoria` retirado por orden del usuario: venv antiguo
+  y audios de la reunión del 29/10 borrados definitivamente; scripts y JSON a la Papelera. ~5 GB liberados.
+- Salida sintética `dos_timbres_…` enviada a la Papelera.
 
 ## Verificación
 
 - Suite completa: 22 correctas, 1 omitida (tiny no descargado). Red bloqueada en pytest.
 - Un aviso de obsolescencia de SciPy dentro de Resemblyzer, sin fallos.
 - pip check correcto; ayuda de consola correcta. Graphify actualizado localmente.
-- Salida previa dos_timbres_20261030_112803_161929 conservada: large-v3 CUDA int8_float16,
-  dos voces y cuatro archivos. No se repitió esa ejecución.
+- Ejecución sintética con large-v3 CUDA int8_float16: dos voces y cuatro archivos.
 - Las pruebas sintéticas comprueban el funcionamiento, no la exactitud sobre habla real.
-  El ASR produjo texto sobre timbres sin palabras, señalado en revisar.md; revisar siempre.
 - Fallos de memoria simulados; no se forzó un agotamiento real de VRAM.
+- Push comprobado: `main...origin/main` sin diferencias. Origen comprobado inexistente.
 
 ## Pendiente y siguiente paso
 
-- Usuario: probar una grabación propia y revisar texto, voces y nombres.
-- Origen C:\Users\iovip\.codex\tmp\io_066_auditoria conservado: incluye datos y documentación
-  adicionales cuya prescindibilidad no está comprobada. No se envió nada a la Papelera ni
-  se liberó espacio en esta continuación. Revisarlo antes de desecharlo.
-- Commit local de entrega: Transcriptor 1.0, Adrian Rodriguez, sin firmas de IA ni push.
-  Sin acciones pendientes de mensajes o publicación.
+- Usuario: probar una grabación propia en `entrada/` y revisar texto, voces y nombres.
+- Mejora opcional futura: pyannote (requiere token de Hugging Face y licencias).

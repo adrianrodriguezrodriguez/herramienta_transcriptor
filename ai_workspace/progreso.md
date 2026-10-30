@@ -1,34 +1,36 @@
 # Progreso del proyecto
 
-Actualizado: 30/10/2026. Entrega: versión 1 operativa; limpieza del origen aplazada.
+Actualizado: 30/10/2026. Entrega: versión 1 terminada y publicada en GitHub.
 
 ## Lo pedido
 
 | Petición | Estado |
 |---|---|
-| Continuar bloques 0, 1 y 2 sin rehacer lo válido | Funcionalidad y pruebas terminadas; origen conservado |
+| Transcriptor 1.0 (bloques 0, 1 y 2) | ✅ Hecho y verificado |
+| Push al repositorio de GitHub | ✅ `main` subido |
+| Borrar origen y audios, liberar espacio | ✅ ~5 GB liberados |
 
 ## Proyecto
 
 | Fase | Estado | % | Por qué |
 |---|---|---|---|
-| Arranque | Hecho | 100 | Entorno y modelo local instalados |
-| Versión 1 | Hecho | 100 | Consola, voces, nombres y cuatro salidas |
-| Cierre | Parcial | 75 | Verificado y documentado; Papelera pendiente |
+| Arranque | ✅ Hecho | 100 | Entorno y modelo local instalados |
+| Versión 1 | ✅ Hecho | 100 | Consola, voces, nombres y cuatro salidas |
+| Cierre | ✅ Hecho | 100 | Pruebas, README, push, limpieza y plan archivado |
 
-Global: funcionalidad entregada; cierre administrativo condicionado a revisar el origen.
+Global: 100 % del plan. Queda la prueba real del usuario.
 
 ## En marcha
 
 | Qué | Quién | ¿Vivo? | Fin |
 |---|---|---|---|
-| Ninguna ejecución activa al entregar | Codex | No | Entrega actual |
+| — | — | — | — |
 
 ## Esperando a otros
 
 | Quién | Qué | Pedido el | ¿Insistir? |
 |---|---|---|---|
-| Usuario | Prueba propia y revisión del origen antes de desecharlo | 30/10/2026 | No |
+| Usuario | Prueba con una grabación propia | 30/10/2026 | No |
 
 ## Mensajes
 
@@ -40,11 +42,10 @@ Global: funcionalidad entregada; cierre administrativo condicionado a revisar el
 
 - 22 pruebas correctas; tiny omitida por no estar instalado; aviso de SciPy sin fallo.
 - Vídeo sintético con nombre OCR y recuperación de memoria simulada verificados.
-- Salida previa de dos timbres conservada. No prueba precisión sobre habla real.
-- Origen intacto; ningún espacio liberado en esta continuación.
+- Sin prueba sobre habla real todavía.
 
 ## Ahora
 
-- Tú: probar tu grabación y revisar resultados; decidir la limpieza tras revisar el origen.
-- Claude: sin tarea activa confirmada.
-- Codex: entrega funcional terminada y documentada; sin procesos en segundo plano.
+- Tú: probar una grabación en `entrada/` cuando quieras.
+- Claude: cierre hecho; sin tarea activa.
+- Codex: sin tarea activa.

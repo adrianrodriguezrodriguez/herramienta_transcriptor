@@ -1,7 +1,14 @@
 # Transcriptor local de reuniones — arranque y versión 1
 
-> **Estado:** BORRADOR
+> **Estado:** COMPLETADO
 > Creado: 30/10/2026 por Claude. Lo ejecuta Codex. Proyecto: `C:\Proyectos\ia\herramienta_transcriptor`.
+
+## Avance
+
+- [x] Bloque 0 — Arranque (30/10/2026)
+- [x] Bloque 1 — Versión 1 (30/10/2026)
+- [x] Pruebas: 22 correctas, 1 omitida (30/10/2026)
+- [x] Bloque 2 — Cierre: README, origen retirado, commit y push a GitHub (30/10/2026)
 
 ## Qué es
 
