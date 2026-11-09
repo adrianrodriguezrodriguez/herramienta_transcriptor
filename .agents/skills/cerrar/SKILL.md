@@ -7,7 +7,7 @@ Si el usuario solo pausa o cambia de agente, salta los pasos 1 y 6.
 
 1. Si cambió código, ejecuta todos los comandos de verificación de `AGENTS.md`. Si fallan, no
    cierres: deja el plan `EN CURSO` o `BLOQUEADO` e informa del fallo.
-2. Si cambió código y Graphify está activo: `graphify update .`
+2. Si cambió código y Graphify está activo: `graphify update .`; deja tres copias con fecha.
 3. Sustituye `ai_workspace/ESTADO.md` (no añadas al final): qué se hizo, qué se verificó con sus
    resultados, qué queda y el siguiente paso. Pon al día `ai_workspace/progreso.md` (secciones de
    la orden `progreso`) y añade la fila de la tarea a `ai_workspace/registro_trabajo.md`, con las

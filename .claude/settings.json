@@ -11,7 +11,7 @@
                                                                         "-WindowStyle",
                                                                         "Hidden",
                                                                         "-Command",
-                                                                        "Start-Process -FilePath graphify -ArgumentList \u0027update\u0027,\u0027.\u0027 -WorkingDirectory $env:CLAUDE_PROJECT_DIR -WindowStyle Hidden"
+                                                                        "Start-Process -FilePath graphify -ArgumentList \u0027update\u0027,\u0027.\u0027 -WorkingDirectory $env:CLAUDE_PROJECT_DIR -WindowStyle Hidden; Get-ChildItem -LiteralPath (Join-Path $env:CLAUDE_PROJECT_DIR \u0027graphify-out\u0027) -Directory -ErrorAction SilentlyContinue | Where-Object Name -match \u0027^\\d{4}-\\d{2}-\\d{2}$\u0027 | Sort-Object Name -Descending | Select-Object -Skip 3 | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue"
                                                                     ],
                                                            "timeout":  10
                                                        }
