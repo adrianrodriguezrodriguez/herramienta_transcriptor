@@ -3,7 +3,15 @@
 Windows 11 y Python 3.11. Convierte audio o vídeo en texto con tiempos y voces,
 sin subir grabaciones ni usar reconocimiento facial. Autor: Adrián Rodríguez Rodríguez.
 
-## Instalación
+## Uso con IA
+
+La forma principal es pedir **transcribir-reunion** e indicar el archivo local. La orden está disponible, idéntica, en `.agents/skills/` y `.claude/skills/`. Primero comprueba lo que ya se sabe; después hace cinco preguntas numeradas como máximo por mensaje, de sí/no o elegir, sobre archivo, idioma, voces, evidencia de nombres y salida.
+
+Todo se procesa localmente y el original permanece intacto. Sin correspondencia comprobada entre persona y voz se mantiene «Hablante N»; no se reconoce a nadie por su cara. Los nombres y rótulos requieren evidencia y revisión. No se suben grabaciones ni resultados a servicios, no se descargan modelos automáticamente y no se envía nada.
+
+## Uso con comandos
+
+### Instalación
 
 El entorno `.venv` y large-v3 ya están instalados en este equipo. Para recrear
 el entorno, instala Python 3.11 y ffmpeg en PATH y ejecuta:
@@ -18,7 +26,7 @@ pesos y licencia de 0.1.4: solo cambia `webrtcvad` por `webrtcvad-wheels` y reti
 la dependencia obsoleta `typing`. `herramientas/preparar_resemblyzer.py` documenta
 y reproduce ese empaquetado a partir del paquete oficial instalado sin dependencias.
 
-## Uso
+### Uso
 
 Desde esta carpeta, coloca tu archivo en `entrada/` o indica su ruta local:
 
@@ -36,7 +44,7 @@ Cada ejecución crea `salida/<nombre>_<fecha>/` con `transcripcion.md`,
 `transcripcion.srt`, `transcripcion.json` (palabras, confianza, evidencias y metadatos)
 y `revisar.md` (baja confianza, nombres propuestos y posibles mezclas de voces).
 
-## Modelos y límites
+### Modelos y límites
 
 Large-v3 usa CUDA `int8_float16` para la GPU de 4 GB; en CPU usa `int8` y tarda más.
 Si falta memoria al cargar, transcribir o repasar, se intenta medium local; si no
@@ -61,7 +69,7 @@ OCR de Windows, sin analizar caras: exige varias lecturas coincidentes con voz.
 Depende del diseño, idioma OCR instalado y resolución; ante duda conserva «Hablante N».
 Revisa siempre las atribuciones nominales, también las obtenidas por OCR.
 
-## Verificación
+### Verificación
 
 ```powershell
 .venv\Scripts\python -m pytest
@@ -71,7 +79,7 @@ Solo usa audio e imágenes sintéticos. Las conexiones de red de Python están b
 en las pruebas. La prueba ASR con tiny se omite explícitamente si no está descargado.
 No se utilizan las grabaciones de los usuarios.
 
-AI Workspace 2.4.0 incluye configuración para Claude y Codex y mapa Graphify local.
+AI Workspace 2.7.0 incluye configuración para Claude y Codex y mapa Graphify local.
 Para actualizar el mapa en entornos restringidos:
 
 ```powershell
