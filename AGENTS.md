@@ -36,11 +36,13 @@ Proporcional al riesgo: en cambios pequeños, solo lo afectado; todo en cambios 
 - Estado: `ai_workspace/ESTADO.md`. Si existe `PLAN_ACTUAL.md`, léelo antes de retomar.
 - Skills: `crear-plan` planifica y para; `ejecutar-plan` ejecuta (la orden aprueba el plan);
   `cerrar` verifica, compacta y archiva, o deja el traspaso si solo se pausa; `error` diagnostica;
-  `progreso` (= `estado`) retoma y da el avance (`ai_workspace/progreso.md`). Mensajes: según
+  `progreso` (= `estado`) retoma y da el avance (`ai_workspace/progreso.md`); `tarea-holded`
+  da la línea del día para Holded de todos los proyectos. Mensajes: según
   `ai_workspace/contexto/personas.md`; nada está enviado sin confirmarlo el usuario.
 - `ai_workspace/` guarda solo documentos breves y vigentes: ni copias de código, ni binarios, ni
   informes viejos, ni traspasos duplicados. Los temporales van fuera del proyecto. Los límites de
   tamaño están en `ai_workspace/configuracion.json`.
+- Orden de `docs/`: cada documento es su texto (`fuente/`) y su Word y PDF (`salida/`). Registros, informes de maquetación, capturas de revisión, resultados de herramientas y pruebas intermedias van a la carpeta temporal y se borran al acabar; solo se guarda una prueba si el usuario la pide o forma parte de una entrega. Lo antiguo, a `docs/historico/`.
 - Graphify: antes de abrir archivos grandes, `graphify explain <símbolo>` o `graphify affected <símbolo>`. `cerrar` lo actualiza.
 
 ## Documentación bajo demanda

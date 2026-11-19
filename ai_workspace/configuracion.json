@@ -1,6 +1,6 @@
 {
     "schema_version":  2,
-    "template_version":  "2.4.0",
+    "template_version":  "2.7.0",
     "proyecto":  {
                      "nombre":  "Transcriptor local de reuniones",
                      "descripcion":  "Vídeo o audio a texto con tiempos y hablantes; nombres solo con evidencia; todo local.",
