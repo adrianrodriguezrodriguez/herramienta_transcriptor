@@ -42,7 +42,7 @@ Proporcional al riesgo: en cambios pequeños, solo lo afectado; todo en cambios 
 - `ai_workspace/` guarda solo documentos breves y vigentes: ni copias de código, ni binarios, ni
   informes viejos, ni traspasos duplicados. Los temporales van fuera del proyecto. Los límites de
   tamaño están en `ai_workspace/configuracion.json`.
-- Orden de `docs/`: cada documento es su texto (`fuente/`) y su Word y PDF (`salida/`). Registros, informes de maquetación, capturas de revisión, resultados de herramientas y pruebas intermedias van a la carpeta temporal y se borran al acabar; solo se guarda una prueba si el usuario la pide o forma parte de una entrega. Lo antiguo, a `docs/historico/`.
+- Documentos: DOCX+PDF con C:\Proyectos\ia\herramienta_generador_docs, estilo iovi_docs_oficiales. En docs/ solo texto (fuente/) y Word/PDF (salida/); lo intermedio, a temporales; lo antiguo, a docs/antiguo/.
 - Graphify: antes de abrir archivos grandes, `graphify explain <símbolo>` o `graphify affected <símbolo>`. `cerrar` lo actualiza.
 
 ## Documentación bajo demanda

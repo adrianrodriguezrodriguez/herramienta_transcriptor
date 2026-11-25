@@ -6,3 +6,4 @@ Una fila por tarea terminada; la añade `cerrar`. Las horas las corrige el usuar
 |---|---|---|---|---|
 | 30/10/2026 | Transcriptor 1.0: retomar, verificar nombres y corregir recuperación de memoria | Codex | por confirmar | 22 pruebas OK, 1 omitida; origen conservado |
 | 30/10/2026 | Cierre: push a GitHub, retirada del origen (~5 GB), documentación y plan archivado | Claude | por confirmar | `main` publicado; plan COMPLETADO |
+| 25/11/2026 | Unificación del estilo oficial de documentos | — | No disponible | Regla de Word y PDF aplicada en AGENTS y configuración; comprobado el límite de tamaño. |

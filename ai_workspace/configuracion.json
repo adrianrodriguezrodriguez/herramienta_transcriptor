@@ -24,7 +24,8 @@
                      "reglas":  [
                                     "Vídeo y audio se procesan en local; nunca se suben.",
                                     "Nombres de hablantes solo con evidencia; sin reconocimiento facial.",
-                                    "Las grabaciones del usuario no se modifican ni se copian al repositorio."
+                                    "Las grabaciones del usuario no se modifican ni se copian al repositorio.",
+                                    "Documentos: DOCX+PDF con C:\\Proyectos\\ia\\herramienta_generador_docs, estilo iovi_docs_oficiales. En docs/ solo texto (fuente/) y Word/PDF (salida/); lo intermedio, a temporales; lo antiguo, a docs/antiguo/."
                                 ],
                      "intocables":  [
                                         "entrada/ (originales del usuario)"
