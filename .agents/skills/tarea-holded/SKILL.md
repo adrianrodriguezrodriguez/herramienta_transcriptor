@@ -1,13 +1,14 @@
 ---
 name: tarea-holded
-description: Líneas del día para Holded. Revisa todos los proyectos de C:\Proyectos tocados en la fecha pedida (hoy por defecto) y da, por tarea de Holded, proyecto, tarea, categoría, horas y una línea lista para pegar.
+description: Líneas del día para Holded. Revisa los proyectos de trabajo (C:\Proyectos\iovi y C:\Proyectos\ia) tocados en la fecha pedida (hoy por defecto) y da, por tarea de Holded, proyecto, tarea, categoría, horas y una línea lista para pegar.
 ---
 
 1. Fecha: la del argumento (`ayer`, `10/11`, `10/11/2026`) o hoy. Solo lectura: no cambies
    archivos ni Git y no recuerdes Holded en otras órdenes.
-2. Lee la lista de tareas del usuario en `C:\Proyectos\holded_tareas.md`. Si no existe o el usuario
-   adjunta una captura más reciente, usa la captura y propón actualizar el archivo.
-3. Busca en `C:\Proyectos`, hasta tres niveles, las carpetas con `.git` o `ai_workspace/`. En cada
+2. Lee la lista de tareas del usuario en `tareas.md` de la copia general de esta orden:
+   `~/.claude/skills/tarea-holded/tareas.md` (Claude) o `~/.codex/skills/tarea-holded/tareas.md`
+   (Codex). Si el usuario pasa una captura más reciente, úsala y actualiza las dos copias.
+3. Busca solo en `C:\Proyectos\iovi` y `C:\Proyectos\ia`, hasta dos niveles, las carpetas con `.git` o `ai_workspace/`. En cada
    una, de ese día: `git log --all` con la fecha y la identidad del usuario, filas de
    `ai_workspace/registro_trabajo.md`, `ESTADO.md`, `progreso.md` y archivos cambiados en
    `ai_workspace/` y `docs/`. Ignora lo automático: `graphify-out/`, `node_modules/`, `bin/`,
